@@ -48,7 +48,11 @@ A brief description of how to work on this project together simultaneously.
 ## Clone the Repository
 To clone the repository:
 
+
 1. Open a folder of your choice and name it `project`.
+    ```bash
+    git clone https://github.com/philtaboada/Challenge-with-EXPLOR
+    
 2. Run the following commands to find your current directory:
 
    **Windows Command Prompt:**
