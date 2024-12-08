@@ -28,44 +28,37 @@ To create a Crew , you need to define Agent ,Task and following Parameters:
 
     [More Details about Crew](https://docs.crewai.com/concepts/crew).
 
-Developing Guidelines with Branch
-Step 1: Clone the Repository
-Open a folder of your choice and name it project.
-Clone this repository by following the steps below.
-Find Current Directory in Windows
-To locate the current working directory:
+# Developing Guidelines with Branch
 
-Command Prompt:
-bash
-Copy code
-echo %cd%
-PowerShell:
-bash
-Copy code
-Get-Location
-Step 2: Verify Git Repository
-Check If You’re in the Correct Directory
-Ensure you’re inside the directory where the repository was cloned:
+## Sections in This Guide
+- [Clone the Repository](#clone-the-repository)
+- [Verify Git Repository](#verify-git-repository)
+- [Re-Cloning the Repository](#re-cloning-the-repository)
+- [Open the Repository in VS Code](#open-the-repository-in-vs-code)
+- [Create a New Branch](#create-a-new-branch)
+- [Make Changes and Commit](#make-changes-and-commit)
+- [Push the Branch to GitHub](#push-the-branch-to-github)
+- [Create a Pull Request (PR)](#create-a-pull-request-pr)
+- [Additional Notes](#additional-notes)
 
-bash
-Copy code
-cd C:\Users\Venks\Desktop\Project\Challenge_1
-git status
-If git status gives the error:
-arduino
-Copy code
-fatal: not a git repository (or any of the parent directories): .git
-This means the directory is not a Git repository.
-Verify .git Folder
-Check if the .git folder exists:
+---
 
-bash
-Copy code
-dir -Force
-Look for a folder named .git. If it’s missing, follow the steps below.
+## Clone the Repository
+To clone the repository:
 
-Step 3: Re-Cloning the Repository
-If the .git folder is missing, or you’re in the wrong directory:
+1. Open a folder of your choice and name it `project`.
+2. Run the following commands to find your current directory:
+
+   **Windows Command Prompt:**
+   ```bash
+   echo %cd%
+    
+**PowerShell:**
+   ```bash
+   Get-Location
+
+Re-Cloning the Repository
+If the .git folder is missing or you’re in the wrong directory:
 
 Navigate to the parent folder:
 
@@ -92,7 +85,7 @@ Check the Git status:
 bash
 Copy code
 git status
-Step 4: Open the Repository in VS Code
+Open the Repository in VS Code
 After confirming the directory is a Git repository:
 
 Open the folder in VS Code:
@@ -100,24 +93,24 @@ Open the folder in VS Code:
 bash
 Copy code
 code .
-Verify:
+Verify by checking the bottom-left corner of VS Code. You should see the branch name (e.g., main or feature/checking_features_built).
+If it’s visible, you are in the correct directory.
 
-Check the bottom-left corner of VS Code. You should see the branch name (e.g., main or feature/checking_features_built).
-If it does, you are in the correct directory.
-Step 5: Create a New Branch
+Create a New Branch
 To work on a new feature or task, create and switch to a new branch:
 
 bash
 Copy code
 git checkout -b feature/your-branch-name
 Example:
+
 bash
 Copy code
 git checkout -b feature/checking_features_built
-Step 6: Make Changes and Commit
+Make Changes and Commit
 Make Changes:
-
 Edit files using VS Code and save your changes.
+
 Check the Status:
 
 bash
@@ -133,21 +126,33 @@ Commit Changes:
 bash
 Copy code
 git commit -m "Added new feature to check built features"
-Step 7: Push the Branch to GitHub
+Push the Branch to GitHub
 Push your branch to the remote repository:
 
 bash
 Copy code
 git push origin feature/checking_features_built
-Step 8: Create a Pull Request (PR)
+Create a Pull Request (PR)
 Go to the GitHub repository in your browser.
 You’ll see an option to Create Pull Request for your new branch.
 Add a Title, Description, and assign reviewers (if applicable).
 Click Submit Pull Request.
 Additional Notes
-If You Still Face Issues:
-Ensure Git is installed and available in your system's PATH.
+If you still face issues:
+Ensure Git is installed and available in your system’s PATH.
 Verify with:
 bash
 Copy code
 git --version
+If not installed, download Git from the official website.
+Ensure the directory was cloned from GitHub and is not a manually copied folder.
+Links to the Sections
+Clone the Repository
+Verify Git Repository
+Re-Cloning the Repository
+Open the Repository in VS Code
+Create a New Branch
+Make Changes and Commit
+Push the Branch to GitHub
+Create a Pull Request (PR)
+Additional Notes
