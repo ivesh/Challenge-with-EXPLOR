@@ -55,7 +55,7 @@ To clone the repository:
     
 **PowerShell:**
     ```bash
-   Get-Location
+    Get-Location
 
 **Re-Cloning the Repository:**
 If the .git folder is missing or you’re in the wrong directory:
