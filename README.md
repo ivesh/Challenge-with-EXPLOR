@@ -28,19 +28,6 @@ To create a Crew , you need to define Agent ,Task and following Parameters:
 
     [More Details about Crew](https://docs.crewai.com/concepts/crew).
 
-# Developing Guidelines with Branch
-
-## Sections in This Guide
-- [Clone the Repository](#clone-the-repository)
-- [Verify Git Repository](#verify-git-repository)
-- [Re-Cloning the Repository](#re-cloning-the-repository)
-- [Open the Repository in VS Code](#open-the-repository-in-vs-code)
-- [Create a New Branch](#create-a-new-branch)
-- [Make Changes and Commit](#make-changes-and-commit)
-- [Push the Branch to GitHub](#push-the-branch-to-github)
-- [Create a Pull Request (PR)](#create-a-pull-request-pr)
-- [Additional Notes](#additional-notes)
-
 ---
 
 
