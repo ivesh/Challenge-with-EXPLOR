@@ -54,105 +54,90 @@ To clone the repository:
    echo %cd%
     
 **PowerShell:**
-   ```bash
+    ```bash
    Get-Location
 
-Re-Cloning the Repository
+**Re-Cloning the Repository:**
 If the .git folder is missing or you’re in the wrong directory:
 
-Navigate to the parent folder:
-
-bash
-Copy code
-cd ..
-Remove the problematic folder:
-
-bash
-Copy code
+**Navigate to the parent folder:**
+    ```bash
+        Copy code
+        cd ..
+        
+        
+**Remove the problematic folder:**
+    ```bash
+    Copy code
 rmdir /s /q Challenge_1
-Re-clone the repository:
+**Re-clone the repository:**
+    ```bash
+    Copy code
+    git clone https://github.com/philtaboada/Challenge-with-EXPLOR
+**Move into the cloned directory:**
+    ```
+    bash
+    Copy code
+    cd Challenge-with-EXPLOR
+**Check the Git status:**
+    ```bash
+    Copy code
+    git status
+    Open the Repository in VS Code
+    After confirming the directory is a Git repository:
 
-bash
-Copy code
-git clone https://github.com/philtaboada/Challenge-with-EXPLOR
-Move into the cloned directory:
-
-bash
-Copy code
-cd Challenge-with-EXPLOR
-Check the Git status:
-
-bash
-Copy code
-git status
-Open the Repository in VS Code
-After confirming the directory is a Git repository:
-
-Open the folder in VS Code:
-
-bash
-Copy code
-code .
+**Open the folder in VS Code:**
+    ```bash
+    Copy code
+    code .
 Verify by checking the bottom-left corner of VS Code. You should see the branch name (e.g., main or feature/checking_features_built).
 If it’s visible, you are in the correct directory.
 
-Create a New Branch
+**Create a New Branch**:
 To work on a new feature or task, create and switch to a new branch:
+    ```bash
+    Copy code
+    git checkout -b feature/your-branch-name
+    Example:
+    Copy code
+    git checkout -b feature/checking_features_built
+    Make Changes and Commit
+    Make Changes:
+    Edit files using VS Code and save your changes.
 
-bash
-Copy code
-git checkout -b feature/your-branch-name
-Example:
+**Check the Status:**
+    ```bash
+    Copy code
+    git status
+    
+**Stage Changes:**
+    ```bash
+    Copy code
+    git add .
 
-bash
-Copy code
-git checkout -b feature/checking_features_built
-Make Changes and Commit
-Make Changes:
-Edit files using VS Code and save your changes.
+**Commit Changes:**
+    ```bash
+    Copy code
+    git commit -m "Added new feature to check built features"
+    Push the Branch to GitHub
 
-Check the Status:
+**Push your branch to the remote repository:**
+    ```bash
+    Copy code
+    git push origin feature/checking_features_built
+**Create a Pull Request (PR)**
+-Go to the GitHub repository in your browser.
+-You’ll see an option to Create Pull Request for your new branch.
+-Add a Title, Description, and assign reviewers (if applicable).
+-Click Submit Pull Request.
+-Additional Notes
+-If you still face issues:
+-Ensure Git is installed and available in your system’s PATH.
 
-bash
-Copy code
-git status
-Stage Changes:
-
-bash
-Copy code
-git add .
-Commit Changes:
-
-bash
-Copy code
-git commit -m "Added new feature to check built features"
-Push the Branch to GitHub
-Push your branch to the remote repository:
-
-bash
-Copy code
-git push origin feature/checking_features_built
-Create a Pull Request (PR)
-Go to the GitHub repository in your browser.
-You’ll see an option to Create Pull Request for your new branch.
-Add a Title, Description, and assign reviewers (if applicable).
-Click Submit Pull Request.
-Additional Notes
-If you still face issues:
-Ensure Git is installed and available in your system’s PATH.
-Verify with:
-bash
-Copy code
-git --version
+**Verify with:**
+    ```bash
+    Copy code
+    git --version
 If not installed, download Git from the official website.
 Ensure the directory was cloned from GitHub and is not a manually copied folder.
-Links to the Sections
-Clone the Repository
-Verify Git Repository
-Re-Cloning the Repository
-Open the Repository in VS Code
-Create a New Branch
-Make Changes and Commit
-Push the Branch to GitHub
-Create a Pull Request (PR)
-Additional Notes
+
